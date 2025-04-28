@@ -1,0 +1,62 @@
+
+@font-face {
+  font-family: "MyLogoFont";
+  src: url("./fonts/QurovaDEMO-Bold-BF67a5c637eed62.otf");
+}
+
+@font-face {
+  font-family: "MyNavLinkFont";
+  src: url('./fonts/QurovaDEMO-Regular-BF67a5c637a5dc9.otf');
+}
+
+body, h1 {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-family: 'MyLogoFont', sans-serif;
+  font-size: 2em;
+  line-height: 40px;
+}
+
+.navigation-container {
+  font-family: 'MyNavLinkFont';
+  padding: 10px;
+  margin: 0;
+  background: #000000;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: whitesmoke;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navigation-links {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 1em;
+  margin: 0;
+}
+
+li {
+  list-style: none;
+  padding: 0 10px;
+}
+
+.resume-btn, .contact-me-btn {
+  font-family: 'MyNavLinkFont';
+  margin: 0 5px;
+  padding: 8px;
+  color: whitesmoke;
+  background-color: #434343;
+  border: 2px solid #434343;
+  border-radius: 15px;
+  line-height: 18px;
+  letter-spacing: -2%;
+}
