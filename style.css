@@ -1,13 +1,8 @@
 
 /* Navigation Section Style */
 @font-face {
-  font-family: "MyLogoFont";
-  src: url("./fonts/QurovaDEMO-Bold-BF67a5c637eed62.otf");
-}
-
-@font-face {
-  font-family: "MyNavLinkFont";
-  src: url('./fonts/QurovaDEMO-Regular-BF67a5c637a5dc9.otf');
+  font-family: "VT323Font";
+  src: url("./fonts/VT323/VT323-Regular.ttf");
 }
 
 body, h1 {
@@ -16,13 +11,13 @@ body, h1 {
 }
 
 h1 {
-  font-family: 'MyLogoFont', sans-serif;
-  font-size: 2em;
+  font-family: 'VT323Font', sans-serif;
+  font-size: 3em;
   line-height: 40px;
 }
 
 .navigation-container {
-  font-family: 'MyNavLinkFont';
+  font-family: 'VT323Font';
   padding: 10px;
   margin: 0;
   position: fixed;
@@ -53,107 +48,11 @@ h1 {
 }
 
 .resume-btn, .contact-me-btn {
-  font-family: 'MyNavLinkFont';
+  font-family: 'VT323Font';
   margin: 0 5px;
   padding: 8px;
   color: whitesmoke;
   background-color: #434343;
   border: none;
-  border-radius: 15px;
   line-height: 18px;
-}
-
-/* Hero Section Style */
-    /* Button Tab */
-.hero-container {
-  height: 100vh;
-  font-family: sans-serif;
-  background-image: url('./images/website\ Background\ Cover.png');
-  background-position:center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position-x: center;
-}
-
-.mac-tab {
-  width: 600px;
-  height: 400px;
-  background-color: white;
-  border-radius: 8px;
-  position: relative;
-  top: 30%;
-  left: 200px;
-}
-
-.mac-tab-container {
-  display: flex;
-  justify-content: start;
-  background-color: rgb(174, 213, 246);
-  border-top-left-radius: 8px;
-  border-top-right-radius: 8px;
-  margin: 0;
-  padding: 0;
-}
-
-.tab-btn {
-  display: flex;
-  justify-content: start;
-  margin: 3px 2px;
-  padding: 0;
-  font-size: 0.56em;
-  cursor: pointer;
-}
-
-.close {
-  background-color: red;
-  padding: 0 3.5px;
-  border: 0.5px solid gray;
-  border-radius: 50%;
-}
-
-.min {
-  background-color: yellow;
-  padding: 0 3.5px;
-  border: 1px solid gray ;
-  border-radius: 50%;
-}
-
-.full {
-  background-color: greenyellow;
-  border: 1px solid gray ;
-  padding: 0;
-  border-radius: 50%;
-}
-
-/* Open Tab */
-
-.open-tab {
-  margin: 4px 0 0 4px;
-  padding: 0;
-  font-size: 0.56em;
-  align-content: center;
-  
-}
-
-.website-tab {
-  border-top: 0.3px solid #ffff;
-  border-right: 0.3px solid #ffff;
-  border-left: 0.3px solid #ffff;
-  border-top-right-radius: 8px;
-  border-top-left-radius: 8px;
-  background-color: white;
-  color: #434343;
-}
-
-.close-icon-spn {
-  margin-left: 10px;
-  padding: 5px;
-}
-
-.fav-icon-spn {
-  padding: 5px;
-}
-
-.new-tab {
-  color: #434343;
 }
