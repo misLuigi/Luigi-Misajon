@@ -56,3 +56,10 @@ h1 {
   border: none;
   line-height: 18px;
 }
+
+section {
+  font-size: 2em;
+  padding: 2rem;
+  background-color: #333;
+  color: white
+}
