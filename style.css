@@ -1,9 +1,11 @@
 
-/* Navigation Section Style */
+/* Font */
 @font-face {
   font-family: "VT323Font";
   src: url("./fonts/VT323/VT323-Regular.ttf");
 }
+
+/* Body and H1 */
 
 body, h1 {
   margin: 0;
@@ -15,6 +17,8 @@ h1 {
   font-size: 3em;
   line-height: 40px;
 }
+
+/* Navigation Section Style */
 
 .navigation-container {
   font-family: 'VT323Font';
@@ -32,6 +36,7 @@ h1 {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 100%;
 }
 
 .navigation-links {
@@ -57,9 +62,71 @@ h1 {
   line-height: 18px;
 }
 
+.container {
+  height: 100vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+  perspective: 10px;
+}
+
+.hero-section {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  transform-style: preserve-3d;
+  z-index: -1;
+}
+
+/* Parallax Effect*/
+
+.background-img,
+.midground-img,
+.foreground-img {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.background-img {
+  transform: translateZ(-10px) scale(2);
+}
+
+.midground-img {
+  transform: translateZ(-5px) scale(1.5);
+}
+
+.foreground-img {
+  transform: translateZ(-2.5px) scale(1.25);
+}
+
+.profile-pic,
+.profile-pic-container {
+  position: relative;
+  height: 250px;
+  width: 250px;
+  object-fit: cover;
+  border-radius: 50%;
+  background-color: gray;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.profile-container {
+  text-align: center;
+  width: 100%;
+  margin: 0 auto;
+  display: block;
+}
+
 section {
   font-size: 2em;
   padding: 2rem;
   background-color: #333;
   color: white
 }
+
+/* Services Section */
+
